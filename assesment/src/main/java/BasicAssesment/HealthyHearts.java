@@ -1,7 +1,4 @@
 package main.java.BasicAssesment;
-
-
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -11,9 +8,7 @@ public class HealthyHearts {
         int age;
         while (true){
             try {
-
                 System.out.println("What is your age? ");
-
                 age = scanner.nextInt();
                 if (age <= 0) {
                     System.out.println("Do not enter an age less than or equal to zero! Try again: ");
@@ -28,9 +23,11 @@ public class HealthyHearts {
         System.out.println("Your maximum heart rate should be " + getMaxHeartRate(age) + " beats per minute");
         getHearTarget(age);
     }
+
     private static int getMaxHeartRate(int age){
         return 220 - age;
     }
+
     private static void getHearTarget(int age){
         int maxHR = getMaxHeartRate(age);
         double minTargetRate = Math.round(maxHR * 0.50);
