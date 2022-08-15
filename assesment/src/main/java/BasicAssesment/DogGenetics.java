@@ -12,7 +12,7 @@ public class DogGenetics {
         System.out.println("Well then, I have this highly reliable report on " +  nameOfDog + "'s prestigious background right here.");
 
         Random random = new Random();
-        int randomFirstBreed = random.nextInt(100/4) + 1;
+        int randomFirstBreed = random.nextInt(100) + 1;
         int randomSecondBreed = random.nextInt(100 - randomFirstBreed) + 1;
         int randomThirdBreed = random.nextInt(100 - randomFirstBreed - randomSecondBreed) + 1;
         int randomFourthBreed = random.nextInt(100- randomFirstBreed -  randomSecondBreed - randomThirdBreed) + 1;
